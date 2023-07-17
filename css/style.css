@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+
+    background-image: url('../images/bg.png');
+    overflow: hidden; /* Hide scrollbars */
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+
+#maincontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/base.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-position: bottom;
+}
+#maincontainer .congrats{
+    width: 60%;
+    margin: 0 auto;
+    padding:20px 10px;
+    display: none;
+}
+#maincontainer .first-prize{
+    width: 25%;
+    margin: 0 auto;
+    display: none;
+    transition: all 0.9s ease;
+
+}
+#maincontainer .numbers{
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: all 0.9s ease;
+
+}
+#maincontainer .numbers ul{
+    /* width: 50%;
+    margin: 0 auto; */
+}
+#maincontainer .numbers ul.counts{
+    display: flex;
+    /* width: 50%;
+    margin: 0 auto; */
+}
+#maincontainer .numbers ul.counts li{
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+#maincontainer .numbers ul.counts li input{
+    background: #4e3a97;
+    height: 90px;
+    width: 75px;
+    position: absolute;
+    right: 25px;
+    top: 37px;
+    font-size: 50px;
+    font-weight: 600;
+    border: 3px solid #b06be0;
+    color: #fff;
+    text-align: center;
+    transition: all 0.9s ease;
+    
+}
+.changed {
+    color: #5efeff !important;
+  }
+#maincontainer .button{
+    position: absolute;
+    bottom: 5%;
+    right: 40%;
+    width: 20%;
+    cursor: pointer;
+}
